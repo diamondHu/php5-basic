@@ -18,7 +18,7 @@ class Foo
         $this->name = $name;
     }
 
-    public function setLink(Foo $link)
+    public function setLink(Foo $link) // 参数是一个对象
     {
         $this->link = $link;
     }
