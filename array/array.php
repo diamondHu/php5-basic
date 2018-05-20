@@ -18,3 +18,5 @@ while (list($key, $value) = each($array)) {
 }
 
 // 其他函数array_walk：也可以处理数组
+
+// 字符串只能被递增，不能被递减
