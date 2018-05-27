@@ -12,7 +12,7 @@
 // 构造函数： __construct
 class BaseClass
 {
-    function __construct()
+    function __construct() // 构造函数不能返回值，所以从构造函数内产生一个错误最常用的一个方法就是抛出一个异常
     {
         print "我是父类构造函数";
     }
