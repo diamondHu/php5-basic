@@ -34,9 +34,9 @@ $b = new A(); // 2
 $c = new A(); // 3
 
 // 此时脚本还未结束，析构函数未被执行，count = 3；
-echo "now here have " . $a->getCount() . "<br>"; // 此时执行完后才会执行析构函数
+echo "now here have " . $a->getCount() . "<br>"; // 此时执行完后才会执行析构函数，析构函数依次减1
 // now here have 3 2 1 0
-unset($c); // 此时$c对象所有属性销毁，会执行析构函数，count = 2；
+unset($c); // 此时$c对象所有属性销毁，也会执行析构函数，count = 2；
 
 echo "now here have " . $a->getCount() . "<br>";
 // now here have 2 1 0
