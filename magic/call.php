@@ -29,7 +29,6 @@ class HelloWorldDelegator
     {
         // $method是$obj->display()调用的方法名
         // $agrs是调用方法时传过来的参数(数组形式)
-        var_dump(array($this->obj, $method));
         return call_user_func_array(array($this->obj, $method), $agrs); // 调用回调函数
     }
 }
